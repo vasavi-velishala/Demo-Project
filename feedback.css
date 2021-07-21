@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #DAE2F8;
+    background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+}
+
+.h1-tag{
+    text-align: center;
+    margin-top: 4%;
+}
+.form-content-section{
+    width:40%;
+    margin-top: 3%;
+    margin-left:30%;
+    border: #DAE2F8 solid;
+   
+}
+.form-control{
+    margin-bottom: 10px;
+    position: relative;
+    width: 90%;
+}
+
+button[type="submit"]{
+    width: 30%;
+    border-radius: 10px;
+    background:whitesmoke;
+    padding: 5px;
+    border: 1px black solid; 
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(255, 173, 234);  
+    cursor: pointer; 
+}
+
+.btn a{
+    text-decoration:none;
+}
+
+.btn a:hover{
+    color:green;
+}

@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: monsterat;
+    font-size: 20px;
+    background-image: url(b.jpg);
+    height: 100vh;
+}
+
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: ivory;
+    border-style: double;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: center;    
+}
+
+.center form{
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+form .textfield{
+    font-weight: bolder;
+    position: relative;
+    align-items: center;
+    font-size: 16px;
+}
+
+.forgot,.forgot a{  
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0px;
+}
+.signin a {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}    
+
+.forgot a:hover,#sign-in-link:hover{
+    color:rgb(23, 21, 168);
+    cursor: pointer;
+    font-weight: bolder;
+    background-color:rgb(69, 122, 16);
+}
+
+input[type="submit"]{
+    width: 80%;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+    background:whitesmoke;
+    padding: 5px;
+    border: 1px black solid; 
+}
+
+input[type="submit"]:hover{
+    background-color:rgb(25, 25, 158);  
+    cursor: pointer;
+    font-weight: bolder;
+    color:cornsilk
+}
+
+.signin{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 10px;
+    text-align: cente;
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+}
+
+#sign-in-link{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 10px;
+    text-align: cente;
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+}
+
+ .textfield .imp{
+    content: " *";
+}

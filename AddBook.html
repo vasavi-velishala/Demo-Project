@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Add Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="AddBook.css">
+    
+    <script>function validation() {
+         var uniqueid = document.getElementById("bookid").value;
+         var btitle = document.getElementById("booktitle").value;
+         var bauthor = document.getElementById("bookauthor").value;
+         var bprice = document.getElementById("bookprice").value;
+    
+         if (uniqueid == '') {
+                alert("please enter book id.");
+                document.getElementById('bookid').style.borderColor = "red";
+                return false;
+            }
+        else if (btitle == '') {
+                alert("please enter book title.");
+                document.getElementById('booktitle').style.borderColor = "red";
+                return false;
+            }
+        else if (bauthor == '') {
+                alert("please enter book author.");
+                document.getElementById('bookauthor').style.borderColor = "red";
+                return false;
+            }
+        else if (bprice == '') {
+                alert("please enter book price.");
+                document.getElementById('bookprice').style.borderColor = "red";
+                return false;
+            }
+        else{
+                alert('Book added successfully');
+            }    
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p class="tophead text-uppercase text-center">Add Book Form</p>
+        </div>
+        <form class="form text-uppercase" onsubmit="return validation()">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputfirstname">Book ID</label>
+                    <input type="text" class="form-control" id="bookid" placeholder="enter book id">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputlastname">Title</label>
+                    <input type="text" class="form-control" id="booktitle" placeholder="enter title">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputState">Genre</label>
+                    <select id="inputState" class="form-control" id="bookgenre" placeholder="enter genre of book">
+                        <option></option>
+                        <option>fiction</option>
+                        <option>Novel</option>
+                        <option>Narrative</option>
+                        <option>Mystery</option>
+                        <option>Thriller</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputlastname">Author</label>
+                    <input type="text" class="form-control" id="bookauthor" placeholder="enter author ">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputprice">price</label>
+                    <input type="text" class="form-control" id="bookprice" placeholder="enter price">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="button btn btn-light">Add</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

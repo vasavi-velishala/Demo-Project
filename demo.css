@@ -1,0 +1,53 @@
+*{margin: 0px; padding: 0px;box-sizing: border-box;}
+
+.Vasavi Velishala{
+	color: black;
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+	background-image:url(book.jpeg);
+	height: 600px;
+	width: 100%;
+	background-size :100% 100% ;
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
+	
+	
+}
+
+.header-section{
+	width: 100%;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.header-section-div{
+	font-size: 20px;
+	font-weight: normal;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	margin-top: 15%;	
+}
+
+.header-section-div h1{
+	font-weight: bolder;
+	font-size: 80px;
+}
+
+.nav-link{
+	margin-inline: 4px;
+}
+
+.nav-link:hover{
+	background-color:rgb(236, 174, 174);
+	border-radius: 15px;
+	transition:.5s ;
+}
+
+.submenu ul li{
+	list-style-type: none;
+}

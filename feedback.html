@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap
+/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFc
+JlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h1-tag">Your Feedback Is Important For Us</h1>
+        <form class="form-content-section">
+            <div class="form-group">
+                <label for="exampleInputText">Name</label><br>
+                <input type="text" class="form-control" id="exampleInputText" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Email" required><br>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputText">Contact Number(optional)</label>
+                <input type="text" class="form-control" id="exampleInputText" placeholder=" Enter mobile number">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comment here</label><br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="comment here" rows="6"
+                    cols="50" required></textarea>
+            </div>
+            <button type="submit" class="btn btn btn-primary myclass" id="Submitbutton"><a href="feedbackresponse.html">submit</a></button>
+        </form>
+    </div>
+</body>
+
+</html>

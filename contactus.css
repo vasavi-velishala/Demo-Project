@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background:linear-gradient(to left,rgb(210, 210, 240),rgb(4, 196, 52));
+    align-content: center;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    padding: 10% 30% 10% 30%;
+}
+
+.content{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: rgb(153, 7, 75) 5px solid;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    pointer-events: none;
+}
+
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    pointer-events: none;
+    line-height: 1.7;
+}
+.links{
+    margin: 15px 0;
+    
+}
+.links li{
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+    font-weight: bolder;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #06d6a0;
+    background: black;
+}
+.links li:hover a{
+    color :#06d6a0;
+    
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}

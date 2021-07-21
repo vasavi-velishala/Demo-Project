@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title>sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.css">
+    <script>function validation() {
+            var Fname = document.getElementById("fname").value;
+            var Lname = document.getElementById("lname").value;
+            var Email = document.getElementById("inputEmail").value;
+            var Pswd = document.getElementById("inputPassword").value;
+            var Mobile = document.getElementById("inputMobile").value;
+            var City = document.getElementById("inputCity").value;
+            var Pincode = document.getElementById("inputPincode").value;
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            
+            if (Fname == '') {
+                alert("please enter First name.");
+                document.getElementById('fname').style.borderColor = "red";
+                return false;
+            }
+            else if (Lname == '') {
+                alert("please enter Last name.");
+                document.getElementById('lname').style.borderColor = "red";
+                return false;
+            }
+            else if (Email == '') {
+                alert("please enter Email.");
+                document.getElementById('inputEmail').style.borderColor = "red";
+                return false;
+            }
+            else if (!filter.test(Email)) {
+                alert("Enter valid Email id.");
+                document.getElementById('inputEmail').style.borderColor = "red";
+                return false;
+            }
+            else if (Mobile=='') {
+                alert("Enter Mobile no.");
+                document.getElementById('inputMobile').style.borderColor = "red";
+                return false;
+            }
+            else if (City=='') {
+                alert("Enter Mobile no.");
+                document.getElementById('inputCity').style.borderColor = "red";
+                return false;
+            }
+            else if (Pincode=='') {
+                alert("Enter Mobile no.");
+                document.getElementById('inputPincode').style.borderColor = "red";
+                return false;
+            }
+            else{
+                alert('Registration successfull');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p class="tophead text-uppercase text-center">Registration Form</p>
+        </div>
+        <form class="form text-uppercase" onsubmit=" return validation()">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputfirstname">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="First name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputlastname">Middle Name</label>
+                    <input type="text" class="form-control" id="mname" placeholder="Middle name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputlastname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Gender</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputMobile">Mobile</label>
+                    <input type="text" class="form-control" id="inputMobile" placeholder="mobile number">
+                </div>
+                <div class="form-group col-md-9">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputState">State</label>
+                    <input type="text" class="form-control" id="inputState" placeholder="state">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCountry">Country</label>
+                    <input type="text" class="form-control" id="inputCountry" placeholder="Country">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPincode">Pincode</label>
+                    <input type="text" class="form-control" id="inputPincode" placeholder="pincode">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="button btn btn-light">Sign In</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
